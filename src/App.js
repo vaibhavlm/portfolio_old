@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'font-awesome/css/font-awesome.css';
+import 'bootstrap-social/bootstrap-social.css';
+import 'aos/dist/aos.css';
+import Main from  "./Components/MainComponent";
+import {BrowserRouter} from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { configurestore } from './redux/configurestore';
+import AOS from 'aos';
+
+const store = configurestore();
 
 function App() {
+  AOS.init({
+    once:true
+  })
   return (
+    <Provider store={store}>
+    <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Main />
     </div>
+    </BrowserRouter>
+    </Provider>
   );
 }
 
