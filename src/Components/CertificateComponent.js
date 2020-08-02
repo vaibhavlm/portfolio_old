@@ -8,7 +8,7 @@ function RenderCertificate({certificates}){
        <div key={certificate.id} className="col-12 col-md-6 py-2    " data-aos="fade-left">
             <Card className="certificate">
                 <CardBody className="text-center card-header" >
-                    <i className="certificate-icon"><img className="thumbnail" height="40px" src='/assets/images/certificate.png' alt=""/></i>
+                    <i className="certificate-icon"><img className="thumbnail" height="40px" src='public/assets/images/certificate.png' alt=""/></i>
                     <CardTitle className="certificate-name">{certificate.name}</CardTitle>
                     <CardSubtitle><p>{certificate.source}</p></CardSubtitle>
                 

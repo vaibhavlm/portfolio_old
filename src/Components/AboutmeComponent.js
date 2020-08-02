@@ -4,7 +4,7 @@ import Footer from './FooterComponent';
 import { NavLink } from 'react-router-dom';
 
 
-const img = '/assets/images/vaibh.png';
+const img = 'public/assets/images/vaibh.png';
 
 function RenderSkill({ skills }) {
 

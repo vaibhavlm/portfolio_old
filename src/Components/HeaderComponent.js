@@ -26,7 +26,7 @@ const Header = ()=>{
                        <NavLink className="nav-link" to='/certificate'>Certifications</NavLink>
                    </NavItem>
                    <NavItem>
-                       <NavLink className="nav-link" to='/contact'>Resume</NavLink>
+                       <NavLink className="nav-link" to='/contact'>Contact</NavLink>
                    </NavItem>
                   </Nav>
               </Collapse>
