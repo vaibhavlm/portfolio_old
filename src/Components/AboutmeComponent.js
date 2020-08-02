@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Media, Progress, Card, CardHeader, CardTitle, CardBody, CardText, CardSubtitle, Button } from 'reactstrap';
+import React from 'react';
+import { Media, Progress, Card, CardTitle, CardText, CardSubtitle, Button } from 'reactstrap';
 import Footer from './FooterComponent';
 import { NavLink } from 'react-router-dom';
 
