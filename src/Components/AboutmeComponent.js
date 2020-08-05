@@ -1,10 +1,10 @@
 import React from 'react';
 import { Media, Progress, Card, CardTitle, CardText, CardSubtitle, Button } from 'reactstrap';
 import Footer from './FooterComponent';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
+import vaibh from "../images/vaibh.png";
 
-
-const img = 'public/assets/images/vaibh.png';
+const img = '/assets/images/vaibhav.png';
 
 function RenderSkill({ skills }) {
 
@@ -32,7 +32,7 @@ function Aboutme(props) {
                         <div className=" col-12 col-md-6 pr-lg-5 mb-5 mb-lg-0">
                             <Media >
                                 <Media left middle>
-                                    <Media height="670px" width="400px" object src={img} alt="vaibhav sinha" className="img-fluid thumbnail d-flex" />
+                                    <Media height="670px" width="400px" object src={vaibh} alt="vaibhav sinha" className="img-fluid thumbnail d-flex" />
                                 </Media>
                             </Media>
                         </div>
@@ -42,9 +42,8 @@ function Aboutme(props) {
                             </div>
 
                             <p className="bio">I am a highly motivated and enthusiatic indvidual. A fast learner and always inclined to learn new technologies.</p>
-
                             <p className="pt-4 mt-0">
-                                <NavLink to='/contact'><Button className="btn btn-primary px-4 py-2 mr-1 btn-sm smoothscroll">Contact Me</Button></NavLink>
+                                <Link  to='/contact'><Button className="btn btn-primary px-4 py-2 mr-1 mb-1 mb-md-0 btn-sm smoothscroll">Contact Me</Button></Link>
                                 <a href="#" className="btn btn-secondary px-4 py-2 btn-sm">Download CV</a>
                             </p>
                         </div>
@@ -61,7 +60,7 @@ function Aboutme(props) {
                     </div>
 
                     <div className="row">
-                        <div className="col-12 col-md-6" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="800">
+                        <div className="col-12 col-md-6" data-aos="fade-right"  data-aos-duration="300">
                             <Card className="education mb-4">
                                 <span className="date"><span className="fa fa-calendar"></span> August 2017 - Present</span>
                                 <CardTitle className="course">Bachelors of Technology (Information Technology)</CardTitle>
@@ -74,7 +73,7 @@ function Aboutme(props) {
                         </div>
                     </div>
                     <div className="row justify-content-end">
-                        <div className="col-12 col-md-6" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="800">
+                        <div className="col-12 col-md-6" data-aos="fade-left"  data-aos-duration="300">
                             <Card className="education mb-4">
                                 <span className="date"><span className="fa fa-calendar"></span> April 2016 - April-2017</span>
                                 <CardTitle className="course">Senior Secondary</CardTitle>
@@ -88,7 +87,7 @@ function Aboutme(props) {
                     </div>
 
                     <div className="row">
-                        <div className=" col-12 col-md-6" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="800">
+                        <div className=" col-12 col-md-6" data-aos="fade-right"  data-aos-duration="300">
                             <Card className="education mb-5">
                                 <span className="date"><span className="fa fa-calendar"></span> April 2014 - April 2015</span>
                                 <CardTitle className="course">Secondary</CardTitle>
@@ -99,9 +98,9 @@ function Aboutme(props) {
                                 </CardText>
                             </Card>
                         </div>
-                    </div> /*
+                    </div> 
 
-                    <div className="row mt-5 skills-section" data-aos="zoom-in" data-aos-duration="800">
+                    <div className="row mt-5 skills-section" data-aos="zoom-in" data-aos-duration="300">
                         <div className="col-12" >
                             <div className="section-heading ">
                                 <h2 className=" pb-5">My <strong>SKILLS</strong></h2>

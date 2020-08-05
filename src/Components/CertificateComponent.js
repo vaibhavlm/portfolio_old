@@ -1,14 +1,16 @@
 import React from 'react';
 import { Card, CardTitle, CardSubtitle, CardBody, CardText } from 'reactstrap';
 import Footer from './FooterComponent'
+import certiphoto from '../images/certificate.png';
+
 
 function RenderCertificate({certificates}){
     const rendcer = certificates.map((certificate)=>{
        return(
-       <div key={certificate.id} className="col-12 col-md-6 py-2    " data-aos="fade-left">
+       <div key={certificate.id} className="col-12 col-md-6 py-2" data-aos="fade-left">
             <Card className="certificate">
                 <CardBody className="text-center card-header" >
-                    <i className="certificate-icon"><img className="thumbnail" height="40px" src='public/assets/images/certificate.png' alt=""/></i>
+                    <i className="certificate-icon"><img className="thumbnail" height="40px" src={certiphoto} alt="certi"/></i>
                     <CardTitle className="certificate-name">{certificate.name}</CardTitle>
                     <CardSubtitle><p>{certificate.source}</p></CardSubtitle>
                 
@@ -29,7 +31,7 @@ function RenderCertificate({certificates}){
 
 function Certificate(props) {
     return (
-        <section className="site-section">
+        <section className="site-section sec">
             <div className="container">
                 <div className="row">
                     <div className="col-12 m-1 py-5">

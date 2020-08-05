@@ -12,7 +12,7 @@ const Header = ()=>{
       <React.Fragment>
           <Navbar  className="site-navbar bg-light" dark expand="md">
               <div className="container">
-              <NavbarBrand className="navbar-brand" href="/">portfolio</NavbarBrand>   
+              <NavbarBrand className="navbar-brand" to='/home'>portfolio</NavbarBrand>   
               <NavbarToggler onClick={()=> toggleNav(!isNav)} />
               <Collapse isOpen={isNav} navbar>
                   <Nav className="navbar-nav" navbar>

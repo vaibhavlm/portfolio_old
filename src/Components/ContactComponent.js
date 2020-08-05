@@ -3,6 +3,9 @@ import {Row, Col, Label, Button} from 'reactstrap';
 import { Form, Errors, Control, LocalForm} from 'react-redux-form';
 import Footer from './FooterComponent';
 
+const handleSubmit = value =>{
+    alert("User detail :" + JSON.stringify(value));
+}
 
 function Contact(){
     return(
@@ -15,7 +18,7 @@ function Contact(){
             </div>
             <div className="row">
                     <div className="col-12 col-md-7">
-                        <LocalForm>
+                        <LocalForm onSubmit={(value)=> handleSubmit(value)}>
                             <h4 className="mb-5">Get In Touch</h4>
                             <Row className="form-group">
                              <Col md={12}>
