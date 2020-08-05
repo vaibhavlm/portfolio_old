@@ -2,7 +2,7 @@
   "name": "my_portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://vaibhavlm.github.io/My_portfolio",
+  "homepage": "http://vaibhavlm.github.io/my_portfolio",
   "engines": {
     "node": "12.x"
   },
